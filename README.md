@@ -8,6 +8,7 @@
 1. 글상자 옵션 적용 연습을 많이 할 수 있을 것으로 보였습니다.
 
 ## 작업 기간
+
 2024년 2월 19일~25일
 
 ## 구현
@@ -17,6 +18,12 @@
 1. Guardian지에서 제공하는 폰트 css 파일을 가져다 글꼴을 적용했습니다.
 1. header, nav, aside section, footer 태그를 사용했습니다.
 1. section 태그에 grid를 적용해 각 기사 내용을 담았습니다.
+
+## 이미지
+
+![Header, Navigation bar, Aside](./README_preview/header_nav_aside.png)
+![section](./README_preview/section.png)
+![footer](./README_preview/footer.png)
 
 ## 아쉬운 점
 
