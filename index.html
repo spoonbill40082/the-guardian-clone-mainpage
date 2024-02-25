@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 이하는 오픈그래프 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Guardian" />
+  <meta property="og:title" content="The Guardian Webpage" />
+  <meta property="og:description" content="Main Page" />
+  <meta property="og:image" content="./images/starbucks_seo.jpg" />
+  <meta property="og:url" content="https://www.theguardian.com/international" />
+
+  <!-- 이하는 트위터 카드 -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="The Guardian" />
+  <meta property="twitter:title" content="The Guardian Webpage" />
+  <meta property="twitter:description" content="Main Page" />
+  <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
+  <meta property="twitter:url" content="https://www.theguardian.com/international" />
+
+  <title>News, sport and opinion from the Guardian's global edition | The Guardian</title>
+
+  <!-- css 리셋 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+
+  <!-- 폰트 출처: https://github.com/guardian/fonts?tab=readme-ov-file -->
+  <!-- 폰트 사용법: https://guardian.github.io/csnx/?path=/docs/source-foundations_typography--docs -->
+  <link rel="stylesheet" href="./css/font-faces.css" />
+
+  <!-- 구글폰트에서 끌어온 아이콘 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!-- 파비콘 -->
+  <link rel="icon" href="./images/logo.png" />
+  <!-- 파비콘 -->
+  <!-- <link rel="icon" href="./images/fabicon.svg" /> -->
+
+
+
+  <!-- 자바스크립트 라이브러리 lodash, gsap를 사용했다. 사용법은 나중에 알아보기 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
+
+</head>
+
+<body>
+
+  <!-- 헤더 -->
+  <header>
+
+
+    <!-- 헤더의 서브 메뉴 -->
+    <div class="container__up">
+      <div class="sub-menu">
+        <a href="javascript:void[0]">
+          <div class="items">
+            <div class="material-icons">feed</div>
+            Print subscriptions
+          </div>
+        </a>
+        <a href="javascript:void[0]">
+          <div class="items">
+            <div class="material-icons">account_circle</div>
+            Sign in
+          </div>
+        </a>
+        <a href="javascript:void[0]">
+          <div class="items">
+            Search jobs
+          </div>
+        </a>
+        <a href="javascript:void[0]">
+          <div class="items">
+            <div class="material-icons">search</div>
+            Search
+          </div>
+        </a>
+        <a href="javascript:void[0]">
+          <div class="items">
+            International edition
+            <div class="material-icons">expand_more</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- 헤더, support message, logo -->
+    <div class="container__down">
+      <div class="item__left">
+        <div class="item">Support the Guardian</div>
+        <div class="item">Fund independent journalism with $5 per month</div>
+        <div class="item">
+          <a href="javascript:void[0]">Support us
+            <div class="material-icons">arrow_forward</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item__right">
+        <a href="https://www.theguardian.com/international">
+          <img src="./images/The_Guardian_2018_logo.svg" alt="The Guardian">
+        </a>
+      </div>
+    </div>
+
+
+  </header>
+
+  <!-- 뉴스 카테고리 -->
+  <nav>
+    <div class="footer__nav-container">
+      <div class="item__list">
+        <div class="color-line"></div>
+        <a href="javascript:void[0]">
+          <div class="item">News</div>
+        </a>
+      </div>
+      <div class="item__list">
+        <div class="color-line"></div>
+        <a href="javascript:void[0]">
+          <div class="item">Opinion</div>
+        </a>
+      </div>
+      <div class="item__list">
+        <div class="color-line"></div>
+        <a href="javascript:void[0]">
+          <div class="item">Sport</div>
+        </a>
+      </div>
+      <div class="item__list">
+        <div class="color-line"></div>
+        <a href="javascript:void[0]">
+          <div class="item">Culture</div>
+        </a>
+      </div>
+      <div class="item__list">
+        <div class="color-line"></div>
+        <a href="javascript:void[0]">
+          <div class="item">Lifestyle</div>
+        </a>
+      </div>
+      <div class="item__list">
+        <a href="javascript:void[0]">
+          <div class="items">More</div>
+          <div class="material-icons">expand_more</div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- aside 영역 -->
+  <aside>
+
+    <div class="container">
+      <a href="javascript:void[0]">
+        <div class="items">Fashion</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Food</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Recipes</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Love & sex</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Health & fitness</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Home & garden</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Women</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Men</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Family</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Travel</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Money</div>
+      </a>
+    </div>
+    <div class="lines"></div>
+    <div class="lines"></div>
+    <div class="lines"></div>
+  </aside>
+
+
+  <!-- 카테고리별 섹션 -->
+
+  <!-- 헤드라인 섹션 -->
+
+
+  <section id="headlines">
+    <div class="container">
+      <div class="item__category">
+        <div class="category-wrap">
+          <div class="item__category-text">
+            Headlines
+          </div>
+
+          <!-- 헤드라인 섹션의 날씨 정보 -->
+          <div class="item__weather">
+            <div class="weather-location">Doksan-dong, Seoul</div>
+            <div class="weather-now">
+              <div class="material-icons">snowing_heavy</div>
+              <div class="weather-now-text">
+                <div class="now">now</div>
+                <div class="temperture">2°C</div>
+              </div>
+            </div>
+            <div class="weather-time">
+              <div class="weather-time-detail">
+                <div class="detail-time">01:00</div>
+                <div class="detail-temperture">2°C</div>
+                <div class="material-icons">cloud</div>
+              </div>
+              <div class="weather-time-detail">
+                <div class="detail-time">04:00</div>
+                <div class="detail-temperture">1°C</div>
+                <div class="material-icons">airwave</div>
+              </div>
+              <div class="weather-time-detail">
+                <div class="detail-time">07:00</div>
+                <div class="detail-temperture">2°C</div>
+                <div class="material-icons">ac_unit</div>
+              </div>
+              <div class="weather-time-detail">
+                <div class="detail-time">10:00</div>
+                <div class="detail-temperture">3°C</div>
+                <div class="material-icons">sunny</div>
+              </div>
+            </div>
+            <div class="item-forecast">
+              <a href="javascript:void[0]">
+                <div class="forecast-detail">
+                  <div class="forecast">View full forecast</div>
+                  <div class="icon">
+                    <div class="material-icons">open_in_new</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item__small-btn">
+          <div class="btn-detail">
+            <a href="javscript:void[0]">
+              <div class="small-btn-text">All world news stories</div>
+            </a>
+          </div>
+          <div class="btn-detail">
+            <a href="javscript:void[0]">
+              <div class="small-btn-text">Twitter</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 기사 시작 -->
+
+      <!-- 기사 1 -->
+      <div class="item__articles">
+        <a href="https://www.theguardian.com/international">
+          <div class="details">
+            <div class="big-article">
+              <div class="texts">
+                <div class="title">Middle East</div>
+                <div class="subtitle">US asks world court not to call for Israeli pullout from Palestinian territories
+                </div>
+                <div class="explanation">US calls for international court of justice to consider Israel’s security needs
+                  in hearings on legal status of occupied territories</div>
+                <div class="time">6h ago</div>
+              </div>
+              <div class="thumnail-big">
+                <img
+                  src="https://i.guim.co.uk/img/media/e791f366f7508728efe2f3159c32d148fd8e7c45/0_464_6960_4176/master/6960.jpg?width=700&dpr=1&s=none"
+                  alt="">
+              </div>
+            </div>
+
+            <!-- 미니 기사 -->
+            <div class="mini-detail">
+              <div class="mini-detail-box">
+                <a href="javascript:void[0]">
+                  <div class="mini">
+                    <span>Israel</span>
+                    UK to consider suspending arms exports if Rafah offensive goes ahead
+                  </div>
+                </a>
+              </div>
+              <div class="mini-detail-box">
+                <a href="javascript:void[0]">
+                  <div class="mini">
+                    <span>Gaza</span>
+                    US urges Israel to drop plans for Rafah ground offensive
+                  </div>
+                </a>
+              </div>
+              <div class="mini-detail-box">
+                <a href="javascript:void[0]">
+                  <div class="mini">
+                    <span>Red Sea</span>
+                    Houthis claim cargo ship is at risk of sinking after attack
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 2 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/dee4cbd98e2d8bd41c0a6884a96a06f281fd88ec/0_303_8009_4805/master/8009.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">Climate crisis</div>
+                <div class="subtitle-middle">Growth in CO2 emissions leaves China likely to miss targets</div>
+                <div class="explanation">Carbon intensity of the country’s economy remains high, despite rapid
+                  improvements in clean energy output</div>
+                <div class="time">1h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 3 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="middle-article">
+              <div class="thumnail-middle">
+                <img
+                  src="https://i.guim.co.uk/img/media/7f3c8108467a2dcf61a03c94a3aaa48d2fc7b2a0/54_0_1380_828/master/1380.jpg?width=460&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title">UK Gaza vote</div>
+                <div class="subtitle">Commons speaker apologises after Gaza ceasefire debate descends into chaos</div>
+                <div class="explanation">Government boycotts precedent-breaking vote that saved Labour mutiny, leaving
+                  Tory and SNP MPs to aim fury at Lindsay Hoyle</div>
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+            <!-- 미니 기사 -->
+            <div class="mini-detail">
+              <div class="mini-detail-box">
+                <a href="javascript:void[0]">
+                  <div class="mini">
+                    <span>Analysis</span>
+                    How Keir Starmer averted Gaza ceasefire vote crisis
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 4 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="thumnail-small">
+              <img
+                src="https://i.guim.co.uk/img/media/398686756a4aed66135609f27e3676765f5b8f2c/0_46_5229_3137/master/5229.jpg?width=220&dpr=1&s=none"
+                alt="">
+            </div>
+            <div class="texts">
+              <div class="title-middle">Ukraine</div>
+              <div class="subtitle-middle">Putin still believes he can win war, says western assessment</div>
+              <div class="time">4h ago</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 5 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="texts">
+              <div class="title-small">Alexei Navalny</div>
+              <div class="subtitle-small">Lawsuit on release of body will not be heard until 4 March</div>
+              <div class="time">4h ago</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 6 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="texts">
+              <div class="title-small">Debt diplomacy
+              </div>
+              <div class="subtitle-small">China needs to do more on ‘silent crisis’, says World Bank official
+              </div>
+              <div class="time">43m ago
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 7 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="texts">
+              <div class="title-small">Brexit
+              </div>
+              <div class="subtitle-small">UK food companies exporting to EU have paid an extra £170m
+              </div>
+              <div class="time">2h ago
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 8 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="texts">
+              <div class="title-small">Ruby Franke
+              </div>
+              <div class="subtitle-small">YouTube mom vlogger sentenced to prison for child abuse
+              </div>
+              <div class="time">8h ago
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 9 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="texts">
+              <div class="title-small">Pakistan election</div>
+              <div class="subtitle-small">Coalition against Imran Khan says deal reached to form government
+              </div>
+              <div class="time">8h ago
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 10 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="texts">
+              <div class="title-small">ADHD
+              </div>
+              <div class="subtitle-small">Disorder may have been an evolutionary advantage, research suggests
+              </div>
+              <div class="time">7h ago
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="texts">
+              <div class="title-small">'It’s a form of Navalny'</div>
+              <div class="subtitle-small">Trump compares his legal troubles to the persecution of dead Russian
+                opposition leader
+              </div>
+              <div class="time">7h ago
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- 메인, News in focus -->
+
+
+  <section id="news-in-focus">
+    <div class="container">
+      <div class="item__category">News in focus</div>
+
+
+
+      <!-- 기사 1 -->
+      <div class="item__articles">
+        <a href="https://www.theguardian.com/international">
+          <div class="details">
+            <div class="middle-article">
+              <div class="thumnail-middle">
+                <img
+                  src="https://i.guim.co.uk/img/media/67319d9ae3d8e202139c8d7c5ed91f8d58c4a1de/0_0_7741_4645/master/7741.jpg?width=460&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title">‘Not the utopia we were promised’</div>
+                <div class="subtitle">How Oregon turned on its own trailblazing drug law
+                </div>
+                <div class="time">6h ago</div>
+              </div>
+            </div>
+
+            <!-- 미니 기사 -->
+
+
+            <!-- 미니 기사 끝 -->
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 2 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/557323c76d6989c024eb2cb85d5420118911b9ba/0_36_1740_1044/master/1740.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">UK politics</div>
+                <div class="subtitle-middle">Growth in CO2 emissions leaves China likely to miss targets</div>
+                <div class="explanation">Carbon intensity of the country’s economy remains high, despite rapid
+                  improvements in clean energy output</div>
+                <div class="time">1h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 3 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/3fbbf1a8d5f4f22ad2a6fdd45d6f21d87cdbea79/81_121_3288_1973/master/3288.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">Alabama’s supreme court ruled embryos are ‘extrauterine children’</div>
+                <div class="subtitle-middle">IVF patients are worried</div>
+
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+            <!-- 미니 기사 -->
+            <div class="mini-detail">
+              <div class="mini-detail-box">
+                <a href="javascript:void[0]">
+                  <div class="mini">
+                    <span>Analysis</span>
+                    How Keir Starmer averted Gaza ceasefire vote crisis
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <!-- 기사 4 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/398686756a4aed66135609f27e3676765f5b8f2c/0_46_5229_3137/master/5229.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">Ukraine</div>
+                <div class="subtitle-middle">Putin still believes he can win war, says western assessment</div>
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 5 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="small-article">
+            <div class="details">
+              <div class="texts">
+                <div class="title-middle">Alexei Navalny</div>
+                <div class="subtitle-middle">Lawsuit on release of body will not be heard until 4 March</div>
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 6 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="small-article">
+            <div class="details">
+              <div class="texts">
+                <div class="title-middle">Debt diplomacy
+                </div>
+                <div class="subtitle-middle">China needs to do more on ‘silent crisis’, says World Bank official
+                </div>
+                <div class="time">43m ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 7 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="texts">
+                <div class="title-middle">Brexit
+                </div>
+                <div class="subtitle-middle">UK food companies exporting to EU have paid an extra £170m
+                </div>
+                <div class="time">2h ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 8 -->
+      <!-- 기사 9 -->
+      <!-- 기사 10 -->
+      <!-- 기사 11 -->
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <div class="advertisement">
+    <div class="ad-box">
+      <div class="add-detail">
+        <div class="add-text">advertisemetnt</div>
+        <div class="add-text">advertisemetnt</div>
+        <div class="add-text">advertisemetnt</div>
+        <div class="add-text">advertisemetnt</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spotlight -->
+
+  <section id="spotlight">
+    <div class="container">
+      <div class="item__category">Spotlight</div>
+
+      <!-- 기사 1 -->
+
+
+      <!-- 기사 1 -->
+      <div class="item__articles">
+        <a href="https://www.theguardian.com/international">
+          <div class="details">
+            <div class="middle-article">
+              <div class="thumnail-middle">
+                <img
+                  src="https://i.guim.co.uk/img/media/67319d9ae3d8e202139c8d7c5ed91f8d58c4a1de/0_0_7741_4645/master/7741.jpg?width=460&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title">‘Not the utopia we were promised’</div>
+                <div class="subtitle">How Oregon turned on its own trailblazing drug law
+                </div>
+                <div class="time">6h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 2 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/557323c76d6989c024eb2cb85d5420118911b9ba/0_36_1740_1044/master/1740.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">UK politics</div>
+                <div class="subtitle-middle">Growth in CO2 emissions leaves China likely to miss targets</div>
+                <div class="explanation">Carbon intensity of the country’s economy remains high, despite rapid
+                  improvements in clean energy output</div>
+                <div class="time">1h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 3 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/3fbbf1a8d5f4f22ad2a6fdd45d6f21d87cdbea79/81_121_3288_1973/master/3288.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">Alabama’s supreme court ruled embryos are ‘extrauterine children’</div>
+                <div class="subtitle-middle">IVF patients are worried</div>
+
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+            <!-- 미니 기사 -->
+            <div class="mini-detail">
+              <div class="mini-detail-box">
+                <a href="javascript:void[0]">
+                  <div class="mini">
+                    <span>Analysis</span>
+                    How Keir Starmer averted Gaza ceasefire vote crisis
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 4 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/a75cb5bd4235fee3f3395728641ee2cb2f0dee5e/0_0_2560_1536/master/2560.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-small">Barry Keoghan as John Lennon?</div>
+                <div class="subtitle-small">Who Sam Mendes should cast in his Beatles movies</div>
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 5 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/1c5147613cc46a0f875d2c344ccfd1f638ed5f99/0_0_6720_4032/master/6720.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">Eating to save nature?</div>
+                <div class="subtitle-middle">Embrace potatoes, ditch meat and track your beans</div>
+                <div class="explanation">The impact of meat on the environment is well known, but what about staples
+                  such as rice and legumes?</div>
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 6 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/55cc7db29a75c0dd698439e25dfe61a72614bb79/1_0_2998_1800/master/2998.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">Two Black moms say police won’t solve their children’s murders</div>
+                <div class="subtitle-middle">A new study asks: is race to blame?</div>
+                <div class="explanation">A report in the journal Criminology shows that homicide cases are less likely
+                  to be solved when the victim is Black</div>
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 7 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/22db0616d7facd09167b552f825d8679f9156e68/0_204_5000_3000/master/5000.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-small">Soft jocks
+                </div>
+                <div class="subtitle-small">Toxic masculinity is out – sensitive men with huge muscles are in
+                </div>
+                <div class="time">2h ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 8 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/8735d7c43098a6296789f979d6efb13b1630c29b/0_180_2400_1440/master/2400.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-small">Environment
+                </div>
+                <div class="subtitle-small">How traditional Hawaiian food is playing a key role in wildfire recovery
+                </div>
+                <div class="time">2h ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- 기사 9 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/eb140ff7de40e4b2cf19daccaf54aab83b838f02/0_79_6000_3600/master/6000.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-small">Dune: Part Two review
+                </div>
+                <div class="subtitle-small">Second half of hallucinatory sci-fi epic is staggering spectacle
+                </div>
+                <div class="time">2h ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- Opilnion -->
+
+
+  <!-- 생략. 너무 많다 -->
+
+  <!-- Tip us off -->
+  <section id="tip-us-off">
+    <div class="container">
+      <div class="item__category">Tip us off</div>
+
+      <div class="item__articles">
+        <div class="items">
+
+          <a href="https://www.theguardian.com/help/ng-interactive/2017/mar/17/contact-the-guardian-securely">
+            <div class="item-btn">
+              <div class="item-image">
+                <div class="eyes">
+                  <img src="./images/eye.svg" alt="">
+                  <img src="./images/eye.svg" alt="">
+                </div>
+              </div>
+              <div class="item-btn-text">Share stories with the Guardian securely and confidentially
+                <div class="underline"></div>
+              </div>
+              <div class="material-icons">arrow_forward</div>
+
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item__articles">
+        <div class="items">
+          <div class="image">
+            <img src="./images/logo.png" alt="fabicon_png">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sport -->
+  <section id="sport">
+    <div class="container">
+      <div class="item__category">Sports</div>
+
+      <!-- 기사 1 -->
+
+      <div class="item__articles">
+        <a href="https://www.theguardian.com/international">
+
+          <!-- 기사 상자 -->
+          <div class="details">
+
+
+            <div class="big-article">
+              <!-- <div class="middle-article"> -->
+              <!-- <div class="small-article"> -->
+              <!-- <div class="long-article"> -->
+              <div class="texts">
+                <div class="title">Porto 1-0 Arsenal</div>
+                <!-- <div class="title-middle">Middle East</div> -->
+                <!-- <div class="title-small">Middle East</div> -->
+
+                <div class="subtitle">Galeno stunner hands limp Gunners first-leg defeat
+                  <!-- <div class="subtitle-middle"> -->
+                  <!-- <div class="subtitle-small"> -->
+                </div>
+                <div class="explanation">
+                  A poor Arsenal display was punished in injury-time as Porto earned a Champions League last-16
+                  first-leg victory
+                </div>
+                <div class="time">6h ago</div>
+              </div>
+              <div class="thumnail-big">
+                <!-- <div class="thumnail-middle"> -->
+                <!-- <div class="thumnail-small"> -->
+                <!-- <div class="thumnail-very-small"> -->
+                <img
+                  src="https://i.guim.co.uk/img/media/803a179be315211f31abbf3fe6670c67d2d83003/0_202_4544_2726/master/4544.jpg?width=700&dpr=1&s=none"
+                  alt="">
+              </div>
+            </div>
+
+
+            <!-- 미니 기사 -->
+            <div class="mini-detail">
+              <div class="mini-detail-box">
+                <a href="javascript:void[0]">
+                  <div class="mini">
+                    <span>‘We will learn from this’</span>
+                    UK to consider suspending arms exports if Rafah offensive goes ahead
+                  </div>
+                </a>
+              </div>
+
+              <div class="mini-detail">
+                <div class="mini-detail-box">
+                  <a href="javascript:void[0]">
+                    <div class="mini">
+                      <span>Nick Ames</span>
+                      Pepe still top dog as new tricks fail to flummox veteran
+                    </div>
+                  </a>
+                </div>
+
+                <div class="mini-detail">
+                  <div class="mini-detail-box">
+                    <a href="javascript:void[0]">
+                      <div class="mini">
+                        <span>Football Daily</span>
+                        Tuchel's long goodbye and a tug of war
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- 미니 기사 끝 -->
+
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- 기사 1 끝 -->
+      <!-- 기사 2 -->
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/ce70f669d0f1a42b0d46da7f83cfdefb7a9e9ff1/0_17_3500_2100/master/3500.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">Liverpool 4-1 Luton</div>
+                <div class="subtitle-middle">Reds recover from early scare to extend lead at top of table</div>
+                <div class="time">1h ago</div>
+              </div>
+              <div class="mini-detail">
+                <div class="mini-detail-box">
+                  <a href="javascript:void[0]">
+                    <div class="mini">
+                      <span>‘We will learn from this’</span>
+                      UK to consider suspending arms exports if Rafah offensive goes ahead
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <!-- 기사 3 -->
+
+      <!-- 기사 4 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/8684d3de5a5be5f4d3561473ba4f91a76cb52328/0_98_3608_2166/master/3608.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-small">Cricket</div>
+                <div class="subtitle-small">England braced for trial by spin in make-or-break fourth Test</div>
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 5 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/815113f1c5acd82bc40011f59d5b30fd677274f8/0_198_8256_4954/master/8256.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">Swagger, soul … and patience</div>
+                <div class="subtitle-middle">Inside Ratcliffe’s plans for Manchester United</div>
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 6 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="small-article">
+              <div class="thumnail-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/92c5c75e634207753c506b0cb50766b955866100/0_147_4282_2570/master/4282.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-middle">Napoli 1-1 Barcelona</div>
+                <div class="subtitle-middle">Osimhen cancels out Lewandowski strike</div>
+                <div class="time">4h ago</div>
+              </div>
+            </div>
+            <div class="mini-detail">
+              <div class="mini-detail-box">
+                <a href="javascript:void[0]">
+                  <div class="mini">
+                    <span>‘We will learn from this’</span>
+                    UK to consider suspending arms exports if Rafah offensive goes ahead
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 7 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/4512ccdcc86c8d130a0d8e2e79756caf7fab91c0/0_61_5212_3129/master/5212.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-small">Soft jocks
+                </div>
+                <div class="subtitle-small">Toxic masculinity is out – sensitive men with huge muscles are in
+                </div>
+                <div class="time">2h ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 기사 8 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/44fb223465eec29e11a502263bcc7602dba74357/0_70_2644_1587/master/2644.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-small">Environment
+                </div>
+                <div class="subtitle-small">How traditional Hawaiian food is playing a key role in wildfire recovery
+                </div>
+                <div class="time">2h ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- 기사 9 -->
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <img
+                  src="https://i.guim.co.uk/img/media/dbe112eb49410da761b434a3fb2c2d31eaf6fef7/6_0_4988_2992/master/4988.jpg?width=220&dpr=1&s=none"
+                  alt="">
+              </div>
+              <div class="texts">
+                <div class="title-small">Dune: Part Two review
+                </div>
+                <div class="subtitle-small">Second half of hallucinatory sci-fi epic is staggering spectacle
+                </div>
+                <div class="time">2h ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Wordiply -->
+
+  <section id="wordiply">
+    <div class="container">
+      <div class="item__category">
+        <div class="item-logo">
+          <img src="./images/The_Guardian_2018_logo.svg" alt="The Guardian Logo" />
+        </div>
+      </div>
+
+      <div class="item__articles">
+        <div class="items">
+          <div class="item-text">
+            Play the Guardian's daily word game and share your score with your friends
+          </div>
+          <a href="javascript:void[0]">
+            <div class="item-btn">
+              <div class="item-btn-text">Play</div>
+              <div class="material-icons">arrow_forward</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item__articles">
+        <div class="items">
+          <div class="image">
+            <img src="./images/wordiply-asset.png" alt="Wordiply">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 팟캐스트, 자바스크립트 적용하기. -->
+  <section id="podcasts">
+    <div class="container">
+      <div class="item__category">Podcasts</div>
+
+      <!-- 전체 상자 -->
+
+      <div class="swiper">
+
+        <!-- 스와이퍼 앞뒤 버튼 -->
+        <div class="swiper-button-prev">
+          <div class="btn__container">
+            <div class="btn__container-arrow">
+              <div class="material-icons">chevron_left</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next">
+          <div class="btn__container">
+            <div class="btn__container-arrow">
+              <div class="material-icons">chevron_right</div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 팟캐스트 컨테이너 -->
+
+        <!-- <div class="swiper-wrapper"> -->
+
+
+        <!-- 컨테이너 1 -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="javascript:void[0]">
+              <div class="box__detail">
+                <div class="imagebox">
+                  <img
+                    src="https://i.guim.co.uk/img/media/2e8a40f19e2487caa025c6c1f7ce5f37079c519e/0_2276_6200_3720/master/6200.jpg?width=220&dpr=1&s=none"
+                    alt="The Libertines: Pete Doherty and Carl Bârat." />
+                </div>
+                <div class="textbox">
+                  <div class="box-title">
+                    Weekend
+                  </div>
+                  <div class="box-subtitle">
+                    Weekend podcast: the Libertines’ tortured reunion, Marina Hyde on celebrity-dictator bromances,
+                    and
+                    the
+                    simple trick to enjoying life more
+                  </div>
+                  <div class="podcast__icon-box">
+                    <div class="material-icons">volume_up</div>
+                  </div>
+                  <div class="box-time">11h ago</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 컨테이너 2 -->
+
+          <div class="swiper-slide">
+            <a href="javascript:void[0]">
+              <div class="box__detail">
+                <div class="imagebox">
+                  <img
+                    src="https://i.guim.co.uk/img/media/c9bb005272cf418df067ce6e0623733a38d92c41/0_208_6240_3744/master/6240.jpg?width=220&dpr=1&s=none"
+                    alt="Residential District Of Kharkiv Attacked By Russian Missiles<br>KHARKIV, UKRAINE - JANUARY 23: Local residents stand in the yard of damaged residential building after Russian missile attack on January 23, 2024 in Kharkiv, Ukraine." />
+                </div>
+                <div class="textbox">
+                  <div class="box-title">
+                    The Audio Long Read
+                  </div>
+                  <div class="box-subtitle">
+                    ‘Ukraine fatigue’: why I’m fighting to stop the world forgetting us – podcast
+                  </div>
+                  <div class="podcast__icon-box">
+                    <div class="material-icons">volume_up</div>
+                  </div>
+                  <div class="box-time">2d ago</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 컨테이너 3 -->
+
+          <div class="swiper-slide">
+            <a href="javascript:void[0]">
+              <div class="box__detail">
+                <div class="imagebox">
+                  <img
+                    src="https://i.guim.co.uk/img/media/04a262503a5e6c8c1cdb7ebd1bf33d10b69736c5/0_69_2048_1229/master/2048.jpg?width=220&dpr=1&s=none"
+                    alt="Ukrainian president Volodymyr Zelensky with Ukrainian troops" />
+                </div>
+                <div class="textbox">
+                  <div class="box-title">
+                    Politics Weekly America
+                  </div>
+                  <div class="box-subtitle">
+                    Will Trump abandon Ukraine if he wins in November? – podcast
+                  </div>
+                  <div class="podcast__icon-box">
+                    <div class="material-icons">volume_up</div>
+                  </div>
+                  <div class="box-time">2d ago</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 컨테이너 4 -->
+
+          <div class="swiper-slide">
+            <a href="javascript:void[0]">
+              <div class="box__detail">
+                <div class="imagebox">
+                  <img
+                    src="https://i.guim.co.uk/img/media/3c210ebb97a91bc972350c5507c2eb70707739d8/0_0_4074_2444/master/4074.jpg?width=220&dpr=1&s=none"
+                    alt="Westminster" />
+                </div>
+                <div class="textbox">
+                  <div class="box-title">
+                    Today in Focus
+                  </div>
+                  <div class="box-subtitle">
+                    How a ceasefire vote led to two days of chaos in the Commons
+                  </div>
+                  <div class="podcast__icon-box">
+                    <div class="material-icons">volume_up</div>
+                  </div>
+                  <div class="box-time">2d ago</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 컨테이너 5 -->
+
+          <div class="swiper-slide">
+            <a href="javascript:void[0]">
+              <div class="box__detail">
+                <div class="imagebox">
+                  <img
+                    src="https://i.guim.co.uk/img/media/1580230f7bb6964f18b144491b77766eed1fbf87/0_146_4000_2400/master/4000.jpg?width=220&dpr=1&s=none"
+                    alt="FC Porto v Arsenal FC: Round of 16 First Leg" />
+                </div>
+                <div class="textbox">
+                  <div class="box-title">
+                    Football Weekly
+                  </div>
+                  <div class="box-subtitle">
+                    Arsenal falter in Porto and Liverpool’s Luton scare – Football Weekly Extra
+                  </div>
+                  <div class="podcast__icon-box">
+                    <div class="material-icons">volume_up</div>
+                  </div>
+                  <div class="box-time">2d ago</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 컨테이너 6 -->
+
+          <div class="swiper-slide">
+            <a href="javascript:void[0]">
+              <div class="box__detail">
+                <div class="imagebox">
+                  <img
+                    src="https://i.guim.co.uk/img/media/6f2f7332c8c9e55434125426fcf920dfcee96d33/0_203_3000_1799/master/3000.jpg?width=220&dpr=1&s=none"
+                    alt="Researcher using microscope in laboratory" />
+                </div>
+                <div class="textbox">
+                  <div class="box-title">
+                    Science
+                  </div>
+                  <div class="box-subtitle">
+                    Mistakes, fakes and a giant rat penis: why are so many science papers being retracted?
+                  </div>
+                  <div class="podcast__icon-box">
+                    <div class="material-icons">volume_up</div>
+                  </div>
+                  <div class="box-time">3d ago</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 컨테이너 7 -->
+
+          <div class="swiper-slide">
+            <a href="javascript:void[0]">
+              <div class="box__detail">
+                <div class="imagebox">
+                  <img
+                    src="https://i.guim.co.uk/img/media/5ec63e3cc60ca75980b14ad780eb59f2d8309178/0_0_3900_2340/master/3900.jpg?width=220&dpr=1&s=none"
+                    alt=" Polish farmers driving down a city street during a protest." />
+                </div>
+                <div class="textbox">
+                  <div class="box-title">
+                    Today in Focus
+                  </div>
+                  <div class="box-subtitle">
+                    Is an uprising by Europe’s farmers sowing the seeds for the far right?
+                  </div>
+                  <div class="podcast__icon-box">
+                    <div class="material-icons">volume_up</div>
+                  </div>
+                  <div class="box-time">3d ago</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 컨테이너 끝 -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Most viewed -->
+
+  <section id="most-viewed">
+    <div class="container">
+      <div class="item__category">Most viewed</div>
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <div class="number">
+                  <div class="particle">1</div>
+                </div>
+              </div>
+              <div class="texts">
+                <div class="live">Live</div>
+                <div class="subtitle-small">
+                  Navalny’s mother shown body and ‘blackmailed by authorities’ over funeral
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <div class="number">
+                  <div class="particle">2</div>
+                </div>
+              </div>
+              <div class="texts">
+                <div class="subtitle-small">
+                  Four dead as Valencia apartment block gutted by flames fanned by high winds, official says
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <!-- <div class="thumnail-very-small">
+                <img src="" alt="">
+              </div> -->
+              <div class="texts">
+                <div class="subtitle-small">advertisement</div>
+                <div class="subtitle-small">advertisement</div>
+                <div class="subtitle-small">advertisement</div>
+                <div class="subtitle-small">advertisement</div>
+                <div class="subtitle-small">advertisement</div>
+                <div class="subtitle-small">advertisement</div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <div class="number">
+                  <div class="particle">3</div>
+                </div>
+              </div>
+              <div class="texts">
+                <div class="subtitle-small">
+                  The Finnish miracle: how the country halved its suicide rate – and saved countless lives
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <div class="number">
+                  <div class="particle">4</div>
+                </div>
+              </div>
+              <div class="texts">
+                <div class="live">Live</div>
+                <div class="subtitle-small">
+                  Claims of Israeli sexual assault of Palestinian women are credible, UN panel says
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <div class="number">
+                  <div class="particle">5</div>
+                </div>
+              </div>
+              <div class="texts">
+                <div class="subtitle-small">
+                  US intelligence casts doubt on Israeli claims of UNRWA-Hamas links, report says
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <div class="number">
+                  <div class="particle">6</div>
+                </div>
+              </div>
+              <div class="texts">
+                <div class="subtitle-small">
+                  ‘It was an execution’: family mourns boy shot dead by Israeli forces
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <div class="number">
+                  <div class="particle">7</div>
+                </div>
+              </div>
+              <div class="texts">
+                <div class="live">Live</div>
+                <div class="subtitle-small">
+                  Russia-Ukraine war: Navalny’s mother says if she doesn’t agree to secret funeral, Russia will ‘do
+                  something with my son’s body’ – as it happened
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <div class="number">
+                  <div class="particle">8</div>
+                </div>
+              </div>
+              <div class="texts">
+                <div class="subtitle-small">
+                  Bobi the Portuguese mastiff stripped of record as world’s oldest ever dog
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <div class="number">
+                  <div class="particle">9</div>
+                </div>
+              </div>
+              <div class="texts">
+                <div class="subtitle-small">
+                  ‘I hope he got the extended warranty’: US jokes about Russian car Putin gave to Kim Jong-un
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item__articles">
+        <a href="javascript:void[0]">
+          <div class="details">
+            <div class="long-article">
+              <div class="thumnail-very-small">
+                <div class="number">
+                  <div class="particle">10</div>
+                </div>
+              </div>
+              <div class="texts">
+                <div class="subtitle-small">
+                  US, UK and Germany endorse Dutch PM Mark Rutte as next Nato chief
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <div class="bottom">
+      <div class="details">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="explore">Explore more on these topics</div>
+        <div class="bottom-item__btn">
+          <div class="btn">
+            <a href="javascript:void[0]">
+              <div class="btn-text">Europe</div>
+            </a>
+          </div>
+          <div class="btn">
+            <a href="javascript:void[0]">
+              <div class="btn-text">Russia</div>
+            </a>
+          </div>
+          <div class="btn">
+            <a href="javascript:void[0]">
+              <div class="btn-text">Israel-Gaza war</div>
+            </a>
+          </div>
+          <div class="btn">
+            <a href="javascript:void[0]">
+              <div class="btn-text">Israel</div>
+            </a>
+          </div>
+          <div class="btn">
+            <a href="javascript:void[0]">
+              <div class="btn-text">Tailor Swift</div>
+            </a>
+          </div>
+          <div class="btn">
+            <a href="javascript:void[0]">
+              <div class="btn-text">Donald Trump</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="aside-long-container">
+      <div class="footer-aside">
+        <div class="container">
+          <a href="javascript:void[0]">
+            <div class="items">Fashion</div>
+          </a>
+          <a href="javascript:void[0]">
+            <div class="items">Food</div>
+          </a>
+          <a href="javascript:void[0]">
+            <div class="items">Recipes</div>
+          </a>
+          <a href="javascript:void[0]">
+            <div class="items">Love & sex</div>
+          </a>
+          <a href="javascript:void[0]">
+            <div class="items">Health & fitness</div>
+          </a>
+          <a href="javascript:void[0]">
+            <div class="items">Home & garden</div>
+          </a>
+          <a href="javascript:void[0]">
+            <div class="items">Women</div>
+          </a>
+          <a href="javascript:void[0]">
+            <div class="items">Men</div>
+          </a>
+          <a href="javascript:void[0]">
+            <div class="items">Family</div>
+          </a>
+          <a href="javascript:void[0]">
+            <div class="items">Travel</div>
+          </a>
+          <a href="javascript:void[0]">
+            <div class="items">Money</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-background">
+
+
+      <div class="footer__nav-container">
+        <div class="item__list">
+          <div class="color-line"></div>
+          <a href="javascript:void[0]">
+            <div class="item">News</div>
+          </a>
+        </div>
+        <div class="item__list">
+          <div class="color-line"></div>
+          <a href="javascript:void[0]">
+            <div class="item">Opinion</div>
+          </a>
+        </div>
+        <div class="item__list">
+          <div class="color-line"></div>
+          <a href="javascript:void[0]">
+            <div class="item">Sport</div>
+          </a>
+        </div>
+        <div class="item__list">
+          <div class="color-line"></div>
+          <a href="javascript:void[0]">
+            <div class="item">Culture</div>
+          </a>
+        </div>
+        <div class="item__list">
+          <div class="color-line"></div>
+          <a href="javascript:void[0]">
+            <div class="item">Lifestyle</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- footer 메뉴 디테일 영역 -->
+
+    <div class="footer-menus">
+      <!-- 1열 -->
+
+      <div class="menu">
+        <div class="menu-item">
+          <div class="item">Original reporting and incisive analysis, direct from the Guardian every morning</div>
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">
+                <div class="text">Sign up for our email</div>
+                <div class="material-icons">arrow_forward</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2열 -->
+
+      <div class="menu">
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">Help</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">Complaints & corrections</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">SecureDrop</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">Work for us</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">Privacy settings</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">Privacy policy</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">Cookie policy></div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">Terms & conditions</div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">Contact us</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3열 -->
+
+      <div class="menu">
+
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text"> All topics</div>
+            </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text"> All writers</div>
+            </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text"> Digital newspaper archive</div>
+            </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text"> Facebook</div>
+            </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text"> YouTube</div>
+            </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text"> Instagram</div>
+            </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text"> LinkedIn</div>
+            </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text"> Twitter</div>
+            </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text"> Newsletters</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 4열 -->
+
+      <div class="menu">
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">Advertise with us</div>
+            </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">Search UK jobs</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5열 -->
+
+
+      <div class="menu">
+        <div class="menu-item">
+          <div class="item">Support the Guardian</div>
+          <div class="item">Available for everyone, funded by readers</div>
+          <div class="item">
+            <a href="javascript:void[0]">
+              <div class="item__text">
+                <div class="text">Support us</div>
+                <div class="material-icons">arrow_forward</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- 마지막 줄 -->
+
+    <div class="last-line">
+      <div class="last-line-text">
+        <div class="text">
+          © 2024 Guardian News & Media Limited or its affiliated companies. All rights reserved. (dcr)
+        </div>
+      </div>
+      <div class="btn-back">
+        <a href="#top">
+          <div class="text">Back to top</div>
+          <div class="material-icons">expand_less</div>
+        </a>
+      </div>
+    </div>
+
+
+
+
+  </footer>
+
+
+</body>
+
+</html>
