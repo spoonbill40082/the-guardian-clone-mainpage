@@ -1,18 +1,21 @@
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  observer: true,
-  observeParents: true,
+new Swiper('.item__category .swiper',{
   autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
+    delay: 4000
   },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  loop: true,
+  pagination:{
+    el: '.item__category .swiper-pagination',
+    clickable: true
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    prevEl: '.item__category .swiper-prev',
+    nextEl: '.item__category .swiper-next'
   },
+  allowTouchMove: false
 });
+
+new Swiper('.new-arrival .new-card-section .swiper',{
+  slidesPerView : 3,
+  //autoplay: true,
+  loop: true
+})
