@@ -1,7 +1,7 @@
 # 👀 Clone coded Website
 
-일간지 "[가디언](https://www.theguardian.com/international)"
-클론 사이트 [바로가기](https://hyejeong-clone-coding-theguardian.netlify.app/)
+1. 일간지 "[가디언](https://www.theguardian.com/international)"
+1. 클론 사이트 "[바로가기](https://hyejeong-clone-coding-theguardian.netlify.app/)"
 
 ## 왜 하필 이 웹사이트를 선택했는지?
 
@@ -23,8 +23,13 @@
 
 ## 이미지
 
+1. header, nav, aside 영역
 ![Header, Navigation bar, Aside](./README_preview/header_nav_aside.png)
+
+1. section 영역(spotlight 카테고리)
 ![section](./README_preview/section.png)
+
+1. footer 영역
 ![footer](./README_preview/footer.png)
 
 ## 아쉬운 점
